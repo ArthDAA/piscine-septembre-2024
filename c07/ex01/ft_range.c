@@ -47,8 +47,7 @@ int main(void)
 
     range = ft_range(min, max);
     if (!range)
-        return (1); // Quitte si le pointeur est nul
-
+        return (1);
     while (i < (max - min))
     {
         printf("%d ", range[i]);
