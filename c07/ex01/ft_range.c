@@ -6,7 +6,7 @@
 /*   By: ade-assi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/23 11:05:43 by ade-assi          #+#    #+#             */
-/*   Updated: 2024/09/23 13:49:32 by ade-assi         ###   ########.fr       */
+/*   Updated: 2024/09/24 11:44:48 by ade-assi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ int	*ft_range(int min, int max)
 	{
 		return (NULL);
 	}
-	dest = malloc(sizeof((int)*(max - min) + 1));
+	dest = malloc(sizeof((int)*(max - min)));
 	if (!dest)
 	{
 		return (NULL);
@@ -35,7 +35,6 @@ int	*ft_range(int min, int max)
 		min++;
 		i++;
 	}
-	dest[i] = NULL;
 	return (dest);
 }
 
